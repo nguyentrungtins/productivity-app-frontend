@@ -1,0 +1,128 @@
+.todoItem__wrapper {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 62px;
+  border-bottom: rgba(0, 0, 0, 0.05) solid 1px;
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.todoItem__wrapper > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.todoItem__wrapper > h3 {
+  margin-left: 10px;
+}
+
+.todoItem__wrapper_add {
+  display: flex;
+  align-content: center;
+  height: 100px;
+  border-bottom: rgba(0, 0, 0, 0.05) solid 1px;
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px 20px 10px 20px;
+  transform-origin: 0% 100%;
+  animation: checked 0.5s ease-out;
+}
+@keyframes checked {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.todoItem__wrapper_add input,
+.todoItem__wrapper_add input:focus-visible {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.todoItem__wrapper_add input::placeholder {
+  color: rgba(0, 0, 0, 0.26);
+}
+.datepicker_toggle {
+  display: flex;
+  position: relative;
+  width: 90px;
+  height: 25px;
+  justify-content: space-around;
+  border-radius: 6px;
+  border: 1.5px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+}
+.datepicker_toggle p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  font-weight: bold;
+}
+.datepicker_toggle_button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml;base64,...");
+}
+.datepicker_input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.datepicker_input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.date_input_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn_cancel {
+  background-color: #fff;
+  border-radius: 6px;
+  height: 25px;
+  border: 1.5px solid rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0 10px 0 10px;
+}
+.btn_submit {
+  background-color: var(--bg-color);
+  border-radius: 6px;
+  height: 25px;
+  font-weight: bold;
+  padding: 0 10px 0 10px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-size: 12px;
+}
