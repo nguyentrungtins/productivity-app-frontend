@@ -39,7 +39,11 @@ const SideBar = () => {
           </div>
           <ul>
             <li>
-              <Link to={"/"} className="nav_link" onClick={handleClickActive}>
+              <Link
+                to={"/"}
+                className="nav_link active"
+                onClick={handleClickActive}
+              >
                 <MdOutlineDashboard size={20} />
 
                 <span className="nav_name">Dashboard</span>
