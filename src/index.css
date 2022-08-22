@@ -2,6 +2,7 @@
   --nav-width: 92px;
   --todo-width: 30vw;
   --primary-color: #3f52bb;
+  --primary-color-opacity: rgba(63, 82, 187, 0.7);
   --bg-color: #4f63d7;
   --sub-color: #b6cefc;
   --white-color: #ffff;
@@ -100,7 +101,7 @@ a {
 }
 
 .nav_link:hover {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-opacity);
 }
 
 .nav_icon {

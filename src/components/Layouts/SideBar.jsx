@@ -14,7 +14,6 @@ const SideBar = () => {
   const handleClickActive = (e) => {
     // Toggle isActive state on click
     /* == Active attribute == */
-
     const linkColor = document.querySelectorAll(".nav_link");
 
     function colorLink(e) {
@@ -23,6 +22,7 @@ const SideBar = () => {
     }
     linkColor.forEach((item) => colorLink(e));
   };
+
   const onLogout = () => {
     dispatch(logout());
     dispatch(reset());
@@ -39,21 +39,21 @@ const SideBar = () => {
           </div>
           <ul>
             <li>
-              <a
-                href="#"
-                className="nav_link active"
-                onClick={handleClickActive}
-              >
+              <Link to={"/"} className="nav_link" onClick={handleClickActive}>
                 <MdOutlineDashboard size={20} />
 
                 <span className="nav_name">Dashboard</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="nav_link" onClick={handleClickActive}>
+              <Link
+                to={"/analysis"}
+                className="nav_link"
+                onClick={handleClickActive}
+              >
                 <TbBrandGoogleAnalytics size={20} />
                 <span className="nav_name">Analytics</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

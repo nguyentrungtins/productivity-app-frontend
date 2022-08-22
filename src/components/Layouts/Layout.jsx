@@ -8,7 +8,6 @@ function Layout() {
 
   return (
     <div className={classes.body}>
-      <SideBar></SideBar>
       <Content></Content>
     </div>
   );
