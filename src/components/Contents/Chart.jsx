@@ -3,7 +3,7 @@ import { Line } from "react-chartjs-2";
 import classes from "./Chart.module.css";
 import SideBar from "../Layouts/SideBar";
 
-const labels = ["January", "February", "March", "April", "May", "June"];
+const labels = ["Mon", "Tue", "Thu", "Fri", "Sat", "Sun"];
 
 const data = {
   labels: labels,
