@@ -36,7 +36,7 @@ const Register = () => {
     if (isSuccess || user) {
       navigate("/");
     }
-    if (isInitial == true) {
+    if (isInitial === true) {
       isInitial = false;
       dispatch(reset());
     }
@@ -89,7 +89,10 @@ const Register = () => {
                 onChange={onChange}
                 value={email}
               />
-              <label className={classes.input__label} htmlFor="username">
+              <label
+                className={classes.input__label}
+                htmlFor="username"
+              >
                 Email
               </label>
             </div>
@@ -105,7 +108,10 @@ const Register = () => {
                 value={name}
                 onChange={onChange}
               />
-              <label className={classes.input__label} htmlFor="fullname">
+              <label
+                className={classes.input__label}
+                htmlFor="fullname"
+              >
                 Fullname
               </label>
             </div>
@@ -121,7 +127,10 @@ const Register = () => {
                 value={password}
                 onChange={onChange}
               />
-              <label className={classes.input__label} htmlFor="password">
+              <label
+                className={classes.input__label}
+                htmlFor="password"
+              >
                 Password
               </label>
             </div>
@@ -137,17 +146,26 @@ const Register = () => {
                 name="password2"
                 onChange={onChange}
               />
-              <label className={classes.input__label} htmlFor="password2">
+              <label
+                className={classes.input__label}
+                htmlFor="password2"
+              >
                 Confirm password
               </label>
             </div>
           </div>
           {isError && <p className={classes.error}>{message}</p>}
 
-          <button type="submit" className={classes.cta__btn}>
+          <button
+            type="submit"
+            className={classes.cta__btn}
+          >
             Sign up
           </button>
-          <a className={classes.forget__pass} href="#">
+          <a
+            className={classes.forget__pass}
+            href="#"
+          >
             Forgot password?
           </a>
         </form>
