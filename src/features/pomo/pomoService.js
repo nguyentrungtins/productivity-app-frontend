@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://productivity-app-tinn.herokuapp.com/api/pomos/";
+const API_URL = process.env.REACT_APP_BACKEND_URL + "api/pomos/";
 
 // Create new todo
 const createPomo = async (todoData, token) => {

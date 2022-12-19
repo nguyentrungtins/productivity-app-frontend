@@ -83,7 +83,10 @@ const Login = () => {
                 value={email}
                 onChange={onChange}
               />
-              <label className={classes.input__label} htmlFor="username">
+              <label
+                className={classes.input__label}
+                htmlFor="username"
+              >
                 Email
               </label>
             </div>
@@ -100,7 +103,10 @@ const Login = () => {
                 name="password"
                 onChange={onChange}
               />
-              <label className={classes.input__label} htmlFor="password">
+              <label
+                className={classes.input__label}
+                htmlFor="password"
+              >
                 Password
               </label>
             </div>
@@ -108,7 +114,10 @@ const Login = () => {
           {isError && <p className={classes.error}>{message}</p>}
 
           <button className={classes.cta__btn}>Log In</button>
-          <a className={classes.forget__pass} href="#">
+          <a
+            className={classes.forget__pass}
+            href="#"
+          >
             Forgot password?
           </a>
         </form>
